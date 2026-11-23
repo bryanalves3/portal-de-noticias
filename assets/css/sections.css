@@ -9,7 +9,7 @@
     position: relative;
     border-radius: 4px;
     overflow: hidden;
-    &::before {
+    &::before { /*& é igual a escrever = .card::before | O motivo de usar o & é por estar dentro da tag do .card*/
       content: "";
       position: absolute;
       inset: 0;
@@ -18,8 +18,17 @@
         180deg,
         transparent 0%,
         #020617
-        
       );
+    }
+    figcaption {
+      position: absolute;
+      bottom: 0;
+
+      padding: 24px;
+
+      h2 {
+        margin-top: 8px;
+      }
     }
   }
 }
